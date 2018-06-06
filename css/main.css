@@ -47,16 +47,8 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+ 
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -92,7 +84,7 @@ textarea {
     resize: vertical;
 }
 
-
+/* 
 label {
     display: inline-block;
     margin-bottom: .5rem;
@@ -118,7 +110,7 @@ label {
     margin-top: .25rem;
     font-size: 80%;
     color: #dc3545;
-}
+} */
 
 
 /* ==========================================================================
@@ -142,11 +134,12 @@ label {
     .simulador__aside--open { left: 0px;}
     .simulador__aside__header{  flex: 0 0 0px; background: #020202; padding: 0px 40px; position: relative; text-align: center;} 
     .simulador__aside__header__brand{ width: 120px; margin: 4px auto; display: inline-block;}
-    .simulador__aside__header__close{float: right; color: #fff; position: absolute; left: 20px; top: 14px; margin: 0;}
+    .simulador__aside__header__close{ line-height: 0; float: right; color: #fff; position: absolute; left: 20px; top: 14px; margin: 0;}
+    .simulador__aside__header__close:hover {text-decoration: none; color: #fff}
     .simulador__aside__body{ margin-top: 20px; flex: 1 0 0; overflow-y: auto; }
     .simulador__aside__body::-webkit-scrollbar-track { box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); background-color: #1d1d1d; }
     .simulador__aside__body::-webkit-scrollbar {border-radius: 5px;  width: 10px; background-color: #00c0ef; }
-    .simulador__aside__body::-webkit-scrollbar-thumb {border-radius: 5px;  background-color: #00c0ef; }
+    .simulador__aside__body::-webkit-scrollbar-thumb {border-radius: 5px;  background-color: #000; }
     .simulador__aside__backdrop { position: fixed; background: transparent; height: 100%; width: 100%; top: 0; transition: all 0.2s linear; z-index: -1; right: 0; bottom: 0; cursor: pointer;}
     .simulador__aside__backdrop--open { z-index: 1000;  background: rgba(0, 0, 0, 0.5); }
     .simulador__aside__backdrop__body--open{ overflow: hidden}
@@ -156,8 +149,9 @@ label {
     .screenshot__list { list-style: none; margin: 0; padding: 0; text-align: center;}
     .screenshot__list__item {padding: 5px; width: 218px; display: inline-block; margin: 10px auto 0 auto; border: 1px solid transparent}
     .screenshot__list__item:hover{ border: 1px solid rgba(0, 76, 255, 1)}
-    .screenshot__list__item__title {margin: 10px 0;  text-decoration: none; color: #00CCFF; }
-    .screenshot__list__item__img__inner{ width: 218px; height: 148px; margin: 0 auto; position: relative; }
+    .screenshot__list__item__title { margin: 10px 0; text-decoration: none; color: #00CCFF; font-size: 0.95rem; }
+    .screenshot__list__item__title:hover{ text-decoration: none;}
+    .screenshot__list__item__img__inner{ width: 100%;  margin: 0 auto; position: relative; }
     .screenshot__list__item__img__inner::before{ transition: all 0.2s linear;  background-color: rgba(0, 0, 0, 0.3); content: ""; position: absolute; top: 0; left: 0; width: 100%;  height: 100%;} 
     .screenshot__list__item__img__inner:hover::before{background-color:rgba(16, 57, 150, 0)} 
     .screenshot__list__item__img {max-width: 100%; }
@@ -167,7 +161,8 @@ label {
 
 
     .simulador__header { background-color: #020202; color: #fff; height: 50px; width: 100%; display: flex; align-content: center; flex-direction: row; align-items: center;}
-    .simulador__header__hamburguer { color: #fff; height: 50px; align-items: center; display: flex; padding: 0 20px; text-decoration: none;}
+    .simulador__header__hamburguer { line-height: 0; color: #fff; height: 50px; align-items: center; display: flex; padding: 0 20px; text-decoration: none;}
+    .simulador__header__hamburguer:hover {text-decoration: none; color: #fff}
     .simulador__header__brand { height: 50px; align-items: center; display: flex;}
     .simulador__header__brand__image {  width: 120px;  }
     .simulador__header__title { height: 50px; align-items: center; display: flex;}
@@ -177,18 +172,14 @@ label {
 /* .simulador__main {} */
 
     .simulador__content { min-height: calc(100vh - 50px); vertical-align: top; display: flex; background-color: #eee;}
-    .simulador__content .product { flex: 1 0 auto; background-color: #222;}
+    .simulador__content .product { flex: 1 0 auto; background-color: #222; padding: 20px;}
     .simulador__content .product>svg {  max-width: 100%}
     .simulador__content .product__aside { flex: 0 0 300px; background-color: rgba(255, 255, 255, 0.7); }
-    .simulador__content .product__aside__inner { padding: 15px 30px;}
+    .simulador__content .product__aside__inner { padding: 15px 30px 15px 20px;}
 
-    .simulador__content .product__aside__inner h3{
-        margin-bottom: 0;
-        font-size: 1.4rem;
-        margin-top: 20px;
-        color: #6c757d!important;
-        font-weight: 500;
-    }
+    .simulador__content .product__aside__inner h3{ margin-bottom: 0; font-size: 1.4rem; margin-top: 20px; color: #6c757d!important; font-weight: 500; }
+    .simulador__content .product__aside__inner h4{ margin-bottom: 0; font-size: 1.1rem; margin-top: 20px; color: #6c757d!important; font-weight: 500;}
+
     .simulador__content .product__aside__inner select{     margin-top: 20px;
         display: inline-block;
         width: 100%;
@@ -205,6 +196,22 @@ label {
         -moz-appearance: none;
         appearance: none;
     }
+
+    .simulador__content .product__aside__inner .list__resumo{ list-style: none; margin-bottom: 0; padding: 0; font-size: 0.9rem;}
+    .simulador__content .product__aside__inner .list__resumo li{}
+    .simulador__content .product__aside__inner .list__resumo li strong{}
+
+
+
+
+/*Produto*/
+#vulto{}
+#vulto g#color-0 path{ fill: #000}
+#vulto g#color-1 path{ fill: #A7E1D2}
+#vulto g#color-2 path{ fill: #4C4C4C}
+#vulto g#color-3 path{ fill: #FFFFFF}
+
+
 
 /* ==========================================================================
    Helper classes
