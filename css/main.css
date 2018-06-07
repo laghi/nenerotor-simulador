@@ -320,7 +320,7 @@ textarea {
   min-height: calc(100vh - 50px);
   vertical-align: top;
   display: flex;
-  /* background-color: #222; */
+  background-color: #222;
 }
 
 .simulador__content .product {
