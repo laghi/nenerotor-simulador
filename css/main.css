@@ -321,6 +321,7 @@ textarea {
   vertical-align: top;
   display: flex;
   background-color: #222;
+  background-image: url("../img/site/patterns/footer_lodyas.png")
 }
 
 .simulador__content .product {
@@ -328,6 +329,36 @@ textarea {
   padding: 20px;
   align-self: center;
 }
+
+
+.is__color-interactive{
+  cursor: copy;
+  /* cursor: url('../img/site/cursor/select.png'), auto;	 */
+  transition: all 0.2s;
+}
+.is__color-interactive:hover{
+  opacity: 0.95;
+  stroke: #2ecbff;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+
+
+.simulador__content .product svg{
+    -webkit-filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));      
+    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));  
+}
+.simulador__content .product svg:hover {
+    -webkit-filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));      
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));  
+}
+  
+#shadow g#color-0 path { fill: #000000 }
+#shadow g#color-1 path { fill: #DB1456 }
+#shadow g#color-2 path { fill: #4B15B5 }
+#shadow g#color-3 path { fill: #FFFFFF }
+#shadow g#color-5 path { fill: #A7E1D2 }
+#shadow g#color-5 path { fill: #4C4C4C }
 
 .simulador__content .product>svg {
   max-width: 100%
@@ -387,23 +418,6 @@ textarea {
 /*Produto*/
 
 
-
-svg{
-    transition: all 0.2s;
-    -webkit-filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));      
-    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));  
-}
-svg:hover {
-    -webkit-filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));      
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));  
-}
-  
-#shadow g#color-0 path { fill: #000000 }
-#shadow g#color-1 path { fill: #DB1456 }
-#shadow g#color-2 path { fill: #4B15B5 }
-#shadow g#color-3 path { fill: #FFFFFF }
-#shadow g#color-5 path { fill: #A7E1D2 }
-#shadow g#color-5 path { fill: #4C4C4C }
 
 /* ==========================================================================
    Helper classes
