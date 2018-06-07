@@ -359,7 +359,7 @@ textarea {
 }
 
 .simulador__content .product__aside__inner select {
-  margin-top: 20px;
+  margin-top: 10px;
   display: inline-block;
   width: 100%;
   height: calc(2.25rem + 2px);
