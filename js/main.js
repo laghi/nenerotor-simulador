@@ -22,6 +22,21 @@ $('.is__color-interactive').click(function (e) {
   $('.popover').css('top', (top - (theHeight / 2) - 10) + 'px');
 });
 
+$('.popover .close').click(function (e) {
+    $('.popover').hide();
+});
+
+
+
+ 
+
+// $('.is__color-interactive')
+// .on( "mouseleave", function() {
+//     $('.popover').hide();
+//   });
+ 
+
+ 
 
 
 // $(document).ready(function(){ 
