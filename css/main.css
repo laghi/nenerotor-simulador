@@ -8,6 +8,14 @@
  */
 
 /* ==========================================================================
+   Variables
+   ========================================================================== */
+:root {
+  --color-accent:#00CCFF;
+}
+
+
+/* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
@@ -84,6 +92,22 @@ fieldset {
 textarea {
   resize: vertical;
 }
+
+.popover .arrow-left{
+  left: -10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+}
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  
+  border-right:10px solid #fff; 
+}
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -221,7 +245,7 @@ textarea {
 .screenshot__list__item__title {
   margin: 10px 0;
   text-decoration: none;
-  color: #00CCFF;
+  color: var(--color-accent);
   font-size: 0.95rem;
 }
 
@@ -310,7 +334,7 @@ textarea {
 }
 
 .simulador__header__title__name strong {
-  color: #00CCFF;
+  color: var(--color-accent);
   font-weight: 300;
 }
 
@@ -338,7 +362,7 @@ textarea {
 }
 .is__color-interactive:hover{
   opacity: 0.95;
-  stroke: #2ecbff;
+  stroke: var(--color-accent);
   stroke-width: 2px;
   stroke-linecap: round;
 }
@@ -357,7 +381,7 @@ textarea {
 #shadow g#color-1 path { fill: #DB1456 }
 #shadow g#color-2 path { fill: #4B15B5 }
 #shadow g#color-3 path { fill: #FFFFFF }
-#shadow g#color-5 path { fill: #A7E1D2 }
+#shadow g#color-4 path { fill: #A7E1D2 }
 #shadow g#color-5 path { fill: #4C4C4C }
 
 .simulador__content .product>svg {
