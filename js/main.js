@@ -19,7 +19,7 @@ $('.is__color-interactive').click(function (e) {
   var theHeight = $('.popover').height();
   $('.popover').show();
   $('.popover').css('left', (left + 10) + 'px');
-  $('.popover').css('top', (top - (theHeight / 2) - 10) + 'px');
+  $('.popover').css('top', (top - (theHeight / 2) - 0) + 'px');
 });
 
 $('.popover .close').click(function (e) {
