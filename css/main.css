@@ -12,6 +12,36 @@
    ========================================================================== */
 :root {
   --color-accent:#00CCFF;
+
+  /*Products color*/
+  --color-kournikova:  #F8D263;
+  --color-coral: #FB8050;
+  --color-Sulu: #B8F67A;
+  --color-DeepCerise: #D63581;
+  --color-MandarianOrange: #8E1F26; 
+  --color-ParisM: #32276C;
+
+  --color-BlackRussian: #222325;
+  --color-Trout: #54595C;
+  --color-Manatee: #909398;
+  --color-Valhalla :#252837;
+  --color-RegalBlue:#1B2256;
+  --color-DarkCerulean: #0E4982;
+  
+  --color-DeepCerise:#D63B74 ;
+  --color-Teal:#03658A ;
+  --color-Confetti:#E3C24E;
+  --color-Cyprus:#0D4529;
+  --color-Apple:#5CC948 ;
+  --color-BurntOrange:#FE8034 ;
+
+  --color-Windsor:#4E2F7D;
+  --color-DarkSlate:#444A4A;
+  --color-Sirocco:#6E7470;
+  --color-RedBerry:#712122;
+  --color-Silver:#C6C4C5;
+  /* --color-BlackRussian:#1F2022; */
+
 }
 
 
