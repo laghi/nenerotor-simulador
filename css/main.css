@@ -20,8 +20,9 @@
 /*colors*/
 
   /*Products color*/
-.color-kournikova{fill:  #F8D263}
-.color-coral{fill:#FB8050;}
+.color-Black{fill: #000000}
+.color-Kournikova{fill:  #F8D263}
+.color-Coral{fill:#FB8050;}
 .color-Sulu{fill:#B8F67A;}
 .color-DeepCerise{fill: #D63581;}
 .color-MandarianOrange{fill:#8E1F26; }
@@ -43,6 +44,33 @@
 .color-Sirocco{fill:#6E7470}
 .color-RedBerry{fill:#712122}
 .color-Silver{fill:#C6C4C5}
+.color-White{fill:#FFFFFF}
+
+span.color-Kournikova{background-color:  #F8D263}
+span.color-Coral{background-color:#FB8050;}
+span.color-Sulu{background-color:#B8F67A;}
+span.color-DeepCerise{background-color: #D63581;}
+span.color-MandarianOrange{background-color:#8E1F26; }
+span.color-ParisM{background-color: #32276C;}
+span.color-BlackRussian{background-color: #222325}
+span.color-Trout{background-color: #54595C}
+span.color-Manatee{background-color:#909398}
+span.color-Valhalla {background-color:#252837}
+span.color-RegalBlue{background-color:#1B2256}
+span.color-DarkCerulean{background-color: #0E4982}
+span.color-DeepCerise{background-color:#D63B74 }
+span.color-Teal{background-color: #03658A }
+span.color-Confetti{background-color: #E3C24E}
+span.color-Cyprus{background-color: #0D4529}
+span.color-Apple{background-color: #5CC948 }
+span.color-BurntOrange{background-color:#FE8034 }
+span.color-Windsor{background-color:#4E2F7D}
+span.color-DarkSlate{background-color: #444A4A}
+span.color-Sirocco{background-color:#6E7470}
+span.color-RedBerry{background-color:#712122}
+span.color-Silver{background-color:#C6C4C5}
+span.color-White{background-color:#FFFFFF}
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -460,6 +488,9 @@ textarea {
   font-size: 0.9rem;
 }
 
+.select2-container{
+  z-index: 1070;
+}
 
 /*Produto*/
 
