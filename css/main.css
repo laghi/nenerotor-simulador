@@ -12,8 +12,37 @@
    ========================================================================== */
 :root {
   --color-accent:#00CCFF;
+
 }
 
+
+
+/*colors*/
+
+  /*Products color*/
+.color-kournikova{fill:  #F8D263}
+.color-coral{fill:#FB8050;}
+.color-Sulu{fill:#B8F67A;}
+.color-DeepCerise{fill: #D63581;}
+.color-MandarianOrange{fill:#8E1F26; }
+.color-ParisM{fill: #32276C;}
+.color-BlackRussian{fill: #222325}
+.color-Trout{fill: #54595C}
+.color-Manatee{fill:#909398}
+.color-Valhalla {fill:#252837}
+.color-RegalBlue{fill:#1B2256}
+.color-DarkCerulean{fill: #0E4982}
+.color-DeepCerise{fill:#D63B74 }
+.color-Teal{fill: #03658A }
+.color-Confetti{fill: #E3C24E}
+.color-Cyprus{fill: #0D4529}
+.color-Apple{fill: #5CC948 }
+.color-BurntOrange{fill:#FE8034 }
+.color-Windsor{fill:#4E2F7D}
+.color-DarkSlate{fill: #444A4A}
+.color-Sirocco{fill:#6E7470}
+.color-RedBerry{fill:#712122}
+.color-Silver{fill:#C6C4C5}
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -376,14 +405,7 @@ textarea {
     -webkit-filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));      
     filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));  
 }
-  
-#shadow g#color-0 path { fill: #000000 }
-#shadow g#color-1 path { fill: #DB1456 }
-#shadow g#color-2 path { fill: #4B15B5 }
-#shadow g#color-3 path { fill: #FFFFFF }
-#shadow g#color-4 path { fill: #A7E1D2 }
-#shadow g#color-5 path { fill: #4C4C4C }
-
+   
 .simulador__content .product>svg {
   max-width: 100%
 }
