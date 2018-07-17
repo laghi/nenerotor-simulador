@@ -21,55 +21,41 @@
 
   /*Products color*/
 .color-Black{fill: #000000}
-.color-Kournikova{fill:  #F8D263}
-.color-Coral{fill:#FB8050;}
-.color-Sulu{fill:#B8F67A;}
-.color-DeepCerise{fill: #D63581;}
-.color-MandarianOrange{fill:#8E1F26; }
-.color-ParisM{fill: #32276C;}
-.color-BlackRussian{fill: #222325}
-.color-Trout{fill: #54595C}
-.color-Manatee{fill:#909398}
-.color-Valhalla {fill:#252837}
-.color-RegalBlue{fill:#1B2256}
-.color-DarkCerulean{fill: #0E4982}
-.color-DeepCerise{fill:#D63B74 }
+.color-Amarelo{fill:  #F8D263}
+.color-AmareloLimao{fill:#B8F67A;}
+.color-Rosa{fill: #D63581;}
+.color-Vermelho{fill:#8E1F26; }
+.color-Roxo{fill: #32276C;}
+.color-Preto{fill: #222325}
+.color-CinzaChumbo{fill: #54595C}
+.color-Cinza{fill:#909398}
+.color-AzulMarinho {fill:#252837}
+.color-AzulRoyal{fill:#1B2256}
+.color-AzulTurquesa{fill: #0E4982}
 .color-Teal{fill: #03658A }
-.color-Confetti{fill: #E3C24E}
-.color-Cyprus{fill: #0D4529}
-.color-Apple{fill: #5CC948 }
-.color-BurntOrange{fill:#FE8034 }
-.color-Windsor{fill:#4E2F7D}
-.color-DarkSlate{fill: #444A4A}
-.color-Sirocco{fill:#6E7470}
-.color-RedBerry{fill:#712122}
-.color-Silver{fill:#C6C4C5}
-.color-White{fill:#FFFFFF}
+.color-VerdeBandeira{fill: #0D4529}
+.color-VerdeLimao{fill: #5CC948 }
+.color-Laranja{fill:#FE8034 }
+.color-Prata{fill:#C6C4C5}
+.color-Branco{fill:#FFFFFF}
 
-span.color-Kournikova{background-color:  #F8D263}
-span.color-Coral{background-color:#FB8050;}
-span.color-Sulu{background-color:#B8F67A;}
-span.color-DeepCerise{background-color: #D63581;}
-span.color-MandarianOrange{background-color:#8E1F26; }
-span.color-ParisM{background-color: #32276C;}
-span.color-BlackRussian{background-color: #222325}
-span.color-Trout{background-color: #54595C}
-span.color-Manatee{background-color:#909398}
-span.color-Valhalla {background-color:#252837}
-span.color-RegalBlue{background-color:#1B2256}
-span.color-DarkCerulean{background-color: #0E4982}
-span.color-DeepCerise{background-color:#D63B74 }
+span.color-Amarelo{background-color:  #F8D263}
+span.color-AmareloLimao{background-color:#B8F67A;}
+span.color-Rosa{background-color: #D63581;}
+span.color-Vermelho{background-color:#8E1F26; }
+span.color-Roxo{background-color: #32276C;}
+span.color-Preto{background-color: #222325}
+span.color-CinzaChumbo{background-color: #54595C}
+span.color-Cinza{background-color:#909398}
+span.color-AzulMarinho {background-color:#252837}
+span.color-AzulRoyal{background-color:#1B2256}
+span.color-AzulTurquesa{background-color: #0E4982}
 span.color-Teal{background-color: #03658A }
-span.color-Confetti{background-color: #E3C24E}
-span.color-Cyprus{background-color: #0D4529}
-span.color-Apple{background-color: #5CC948 }
-span.color-BurntOrange{background-color:#FE8034 }
-span.color-Windsor{background-color:#4E2F7D}
-span.color-DarkSlate{background-color: #444A4A}
-span.color-Sirocco{background-color:#6E7470}
-span.color-RedBerry{background-color:#712122}
-span.color-Silver{background-color:#C6C4C5}
-span.color-White{background-color:#FFFFFF}
+span.color-VerdeBandeira{background-color: #0D4529}
+span.color-VerdeLimao{background-color: #5CC948 }
+span.color-Laranja{background-color:#FE8034 }
+span.color-Prata{background-color:#C6C4C5}
+span.color-Branco{background-color:#FFFFFF}
 
 
 /* ==========================================================================

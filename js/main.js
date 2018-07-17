@@ -3,41 +3,42 @@
   var pathEmEdicao;
 
   var bodyColors = [
-    'Kournikova',
-    'Coral',
-    'Sulu',
-    'DeepCerise',
-    'MandarianOrange',
-    'ParisM',
-    'BlackRussian',
-    'Trout',
-    'Manatee',
-    'Valhalla',
-    'RegalBlue',
-    'DarkCerulean'
+    'Amarelo',
+    'AmareloLimao',
+    'AzulMarinho',
+    'AzulRoyal',
+    'AzulTurquesa',
+    'Cinza',
+    'CinzaChumbo',
+    'Laranja',
+    'Prata',
+    'Preto',
+    'Rosa',
+    'Roxo',
+    'Vermelho',
   ];
 
   var stripeColors = [
-    'DeepCerise',
-    'Teal',
-    'Confetti',
-    'Cyprus',
-    'Apple',
-    'BurntOrange',
-    'Windsor',
-    'DarkSlate',
-    'Sirocco',
-    'RedBerry',
-    'Silver',
-    'White',
-    'DarkCerulean'
+    'Amarelo',
+    'AzulTurquesa',
+    'AzulRoyal',
+    'Branco',
+    'Cinza',
+    'CinzaChumbo',
+    'Laranja',
+    'Preto',
+    'Rosa',
+    'Roxo',
+    'VerdeBandeira',
+    'VerdeLimao',
+    'Vermelho',
   ];
 
   $(function () {
-    changeColor($('#inferior path'), 'Coral');
-    changeColor($('#superior path'), 'ParisM');
-    changeColor($('#lateral-inferior path'), 'Sirocco');
-    changeColor($('#lateral-superior path'), 'Silver');
+    changeColor($('#inferior path'), 'Preto');
+    changeColor($('#superior path'), 'Cinza');
+    changeColor($('#lateral-inferior path'), 'AzulTurquesa');
+    changeColor($('#lateral-superior path'), 'Amarelo');
 
     $(".toggle-aside").click(function (event) {
       $('.simulador__aside').toggleClass('simulador__aside--open');
@@ -69,9 +70,12 @@
       $('.popover').css('top', (top - (theHeight / 2) - 0) + 'px');
       $('.popover').show();
     });
-    $('#escolher-cor').click(function () {
+    $('#popover-select').change(function(){
       var selectCor = $('#popover-select');
       changeColor(pathEmEdicao, selectCor.val());
+      $('.popover').hide();
+    });
+    $('#escolher-cor').click(function () {     
       $('.popover').hide();
     });
     $('body *:not(.controle-cor)').click(function (e) {
