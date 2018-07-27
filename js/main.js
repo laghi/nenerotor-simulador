@@ -117,4 +117,12 @@
 
 
 
+$(document).ready(function(){
+    $(".info__card .card-header").click(function(){
+      $(".info__card ").toggleClass("is_active");
+      console.log("Opa");
+    
+    });
+});
+
 })(jQuery);
