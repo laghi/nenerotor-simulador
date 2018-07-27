@@ -398,7 +398,7 @@ textarea {
 
 .simulador__content {
   height: calc(100vh - 50px);
-  background-color: #222;
+  background-color: #eee;
   background-image: url("../img/site/patterns/graphy.png")
 }
 
