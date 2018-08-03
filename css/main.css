@@ -399,13 +399,33 @@ textarea {
 .simulador__content {
   height: calc(100vh - 50px);
   background-color: #eee;
-  background-image: url("../img/site/patterns/graphy.png")
+  /* background-image: url("../img/site/patterns/graphy.png") */
 }
 
 .simulador__content .product {
   flex: 1 0 auto;
   padding: 20px;
   align-self: center;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+
+
+.simulador__content .color_list {
+  display: flex;
+  margin-bottom: 20px;
+}
+.simulador__content .color_item {
+  border: 1px solid #d2d3d4;
+  padding-top: 20px;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
 }
 
 
@@ -416,9 +436,10 @@ textarea {
 }
 .is__color-interactive:hover{
   opacity: 0.95;
-  stroke: var(--color-accent);
-  stroke-width: 2px;
+  stroke: lightgray;
+  stroke-width: 1px;
   stroke-linecap: round;
+  fill: #b8b8b8;
 }
 
 
