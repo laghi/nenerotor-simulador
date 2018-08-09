@@ -20,7 +20,7 @@
 /*colors*/
 
   /*Products color*/
-.color-Black{fill: #000000}
+.color-Black{fill: #000000; background-color: #000000}
 .color-Amarelo{fill:  #F8D263}
 .color-AmareloLimao{fill:#B8F67A;}
 .color-Rosa{fill: #D63581;}
@@ -143,12 +143,12 @@ textarea {
     margin-top: -10px;
 }
 .arrow-left {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent; 
-  
-  border-right:10px solid #fff; 
+  border-bottom: 10px solid transparent;
+
+  border-right:10px solid #fff;
 }
 
 
@@ -270,7 +270,7 @@ textarea {
 
 /*  .screenshot */
 
- 
+
 .screenshot__list {
   list-style: none;
   margin: 0;
@@ -376,8 +376,8 @@ textarea {
   align-items: center;
   display: none;
 }
-@media (min-width: 768px) { 
-  .simulador__header__title { 
+@media (min-width: 768px) {
+  .simulador__header__title {
     display: flex;
   }
 }
@@ -412,11 +412,13 @@ textarea {
 
 
 
-.simulador__content .color_list {
-  display: flex;
-  margin-bottom: 20px;
+
+.color__list {
+    text-align: center;
+    margin-bottom: 20px;
 }
-.simulador__content .color_item {
+
+.color_item {
   border: 1px solid #d2d3d4;
   padding-top: 20px;
   width: 60px;
@@ -426,7 +428,13 @@ textarea {
   cursor: pointer;
   border-radius: 4px;
   font-size: 12px;
+  transition: all 0.2s;
 }
+.color_item:hover {
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 
 
 .is__color-interactive{
@@ -444,20 +452,20 @@ textarea {
 
 
 .simulador__content .product svg{
-    -webkit-filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));      
-    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));  
+    -webkit-filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));
+    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));
 }
 .simulador__content .product svg:hover {
-    -webkit-filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));      
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));  
+    -webkit-filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));
 }
-   
+
 .simulador__content .product>svg {
   max-width: 100%
 }
 
 
- 
+
 
 .info{
   position: fixed;
@@ -465,20 +473,20 @@ textarea {
   right: 10px;
   bottom: 0;
 }
-.info__card{ 
+.info__card{
   z-index: 1000;
   bottom: -250px;
   transition: all 0.2s ease-in;
   border: none;
 }
 
-.info__card .card-header{ 
+.info__card .card-header{
   cursor: pointer;
   color: var(--color-accent);
   background: #020202 ;
 }
 
-.info__card.is_active{ 
+.info__card.is_active{
   bottom: 0
 }
 
@@ -496,13 +504,20 @@ textarea {
     width: 100%;}
 
 
- 
+
 
 
 
 .select2-container{
   z-index: 1070;
 }
+
+
+
+
+
+
+
 
 /*Produto*/
 
