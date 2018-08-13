@@ -102,8 +102,7 @@
           <div v-for="color in currentColors" :title="color.name[language]" class="color__item" :class="color.cssClass" @click="chooseColor(color)">
             <div>
               {{color.abbr[language]}}
-            </div>
-            <small v-text="color.name[language]"></small>
+            </div>            
           </div>
         </div>
 
