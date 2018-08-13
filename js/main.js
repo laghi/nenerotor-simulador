@@ -1,128 +1,99 @@
-(function ($) {
+const bodyColors = [
+  { abbr: { 'pt-br': 'AM', 'en': 'YLW' }, name: { 'pt-br': 'Amarelo', 'en': 'Yellow' }, cssClass: 'color-Amarelo' },
+  { abbr: { 'pt-br': 'AML', 'en': 'GYLW' }, name: { 'pt-br': 'Amarelo Limão', 'en': 'Lemon Yellow' }, cssClass: 'color-AmareloLimao' },
+  { abbr: { 'pt-br': 'AZM', 'en': 'NBL' }, name: { 'pt-br': 'Azul Marinho', 'en': 'Navy Blue' }, cssClass: 'color-AzulMarinho' },
+  { abbr: { 'pt-br': 'AZR', 'en': 'RBL' }, name: { 'pt-br': 'Azul Royal', 'en': 'Royal Blue' }, cssClass: 'color-AzulRoyal' },
+  { abbr: { 'pt-br': 'AZT', 'en': 'TQ' }, name: { 'pt-br': 'Azul Turquesa', 'en': 'Turquoise' }, cssClass: 'color-AzulTurquesa' },
+  { abbr: { 'pt-br': 'CZ', 'en': 'GR' }, name: { 'pt-br': 'Cinza', 'en': 'Grey' }, cssClass: 'color-Cinza' },
+  { abbr: { 'pt-br': 'CZC', 'en': 'DGR' }, name: { 'pt-br': 'Cinza Chumbo', 'en': 'Dark Grey' }, cssClass: 'color-CinzaChumbo' },
+  { abbr: { 'pt-br': 'LRJ', 'en': 'ORG' }, name: { 'pt-br': 'Laranja', 'en': 'Orange' }, cssClass: 'color-Laranja' },
+  { abbr: { 'pt-br': 'PRTA', 'en': 'SIL' }, name: { 'pt-br': 'Prata', 'en': 'Silver' }, cssClass: 'color-Prata' },
+  { abbr: { 'pt-br': 'PRTO', 'en': 'BLK' }, name: { 'pt-br': 'Preto', 'en': 'Black' }, cssClass: 'color-Preto' },
+  { abbr: { 'pt-br': 'RSA', 'en': 'PNK' }, name: { 'pt-br': 'Rosa', 'en': 'Pink' }, cssClass: 'color-Rosa' },
+  { abbr: { 'pt-br': 'RXO', 'en': 'PRP' }, name: { 'pt-br': 'Roxo', 'en': 'Purple' }, cssClass: 'color-Roxo' },
+  { abbr: { 'pt-br': 'VRML', 'en': 'RED' }, name: { 'pt-br': 'Vermelho', 'en': 'Red' }, cssClass: 'color-Vermelho' },
+];
 
-  var pathEmEdicao;
+const stripeColors = [
+  { abbr: { 'pt-br': 'AM', 'en': 'YLW' }, name: { 'pt-br': 'Amarelo', 'en': 'Yellow' }, cssClass: 'color-Amarelo' },
+  { abbr: { 'pt-br': 'AZR', 'en': 'RBL' }, name: { 'pt-br': 'Azul Royal', 'en': 'Royal Blue' }, cssClass: 'color-AzulRoyal' },
+  { abbr: { 'pt-br': 'AZT', 'en': 'TQ' }, name: { 'pt-br': 'Azul Turquesa', 'en': 'Turquoise' }, cssClass: 'color-AzulTurquesa' },
+  { abbr: { 'pt-br': 'BRC', 'en': 'WHT' }, name: { 'pt-br': 'Branco', 'en': 'White' }, cssClass: 'color-Branco' },
+  { abbr: { 'pt-br': 'CZ', 'en': 'GR' }, name: { 'pt-br': 'Cinza', 'en': 'Grey' }, cssClass: 'color-Cinza' },
+  { abbr: { 'pt-br': 'CZC', 'en': 'DGR' }, name: { 'pt-br': 'Cinza Chumbo', 'en': 'Dark Grey' }, cssClass: 'color-CinzaChumbo' },
+  { abbr: { 'pt-br': 'LRJ', 'en': 'ORG' }, name: { 'pt-br': 'Laranja', 'en': 'Orange' }, cssClass: 'color-Laranja' },
+  { abbr: { 'pt-br': 'PRTO', 'en': 'BLK' }, name: { 'pt-br': 'Preto', 'en': 'Black' }, cssClass: 'color-Preto' },
+  { abbr: { 'pt-br': 'RSA', 'en': 'PNK' }, name: { 'pt-br': 'Rosa', 'en': 'Pink' }, cssClass: 'color-Rosa' },
+  { abbr: { 'pt-br': 'RXO', 'en': 'PRP' }, name: { 'pt-br': 'Roxo', 'en': 'Purple' }, cssClass: 'color-Roxo' },
+  { abbr: { 'pt-br': 'VRD', 'en': 'GRN' }, name: { 'pt-br': 'Verde Bandeira', 'en': 'Green' }, cssClass: 'color-VerdeBandeira' },
+  { abbr: { 'pt-br': 'VRDL', 'en': 'LIME' }, name: { 'pt-br': 'Verde Limão', 'en': 'Lime' }, cssClass: 'color-VerdeLimao' },
+  { abbr: { 'pt-br': 'VRML', 'en': 'RED' }, name: { 'pt-br': 'Vermelho', 'en': 'Red' }, cssClass: 'color-Vermelho' },
+];
 
-  var bodyColors = [
-    'Amarelo',
-    'AmareloLimao',
-    'AzulMarinho',
-    'AzulRoyal',
-    'AzulTurquesa',
-    'Cinza',
-    'CinzaChumbo',
-    'Laranja',
-    'Prata',
-    'Preto',
-    'Rosa',
-    'Roxo',
-    'Vermelho',
-  ];
-
-  var stripeColors = [
-    'Amarelo',
-    'AzulTurquesa',
-    'AzulRoyal',
-    'Branco',
-    'Cinza',
-    'CinzaChumbo',
-    'Laranja',
-    'Preto',
-    'Rosa',
-    'Roxo',
-    'VerdeBandeira',
-    'VerdeLimao',
-    'Vermelho',
-  ];
-
-  $(function () {
-    changeColor($('#inferior path'), 'Preto');
-    changeColor($('#superior path'), 'Cinza');
-    changeColor($('#lateral-inferior path'), 'AzulTurquesa');
-    changeColor($('#lateral-superior path'), 'Amarelo');
-
-    $(".toggle-aside").click(function (event) {
-      $('.simulador__aside').toggleClass('simulador__aside--open');
-      $('.simulador__aside__backdrop').toggleClass('simulador__aside__backdrop--open');
-      $('body').toggleClass('simulador__aside__backdrop__body--open');
-      event.preventDefault();
-    });
-    $('#popover-select').select2({
-      escapeMarkup: function (markup) {
-        return markup;
-      },
-      templateResult: function (data) {
-        return '<div><span style="display: inline-block; width: 15px; height: 15px; vertical-align: middle; margin-right: 10px;" class="color-' + data.text + '"></span>' + data.text + '</div>';
-      },
-      templateSelection: function (data) {
-        return data.text;
-      },
-      width: 200
-    });
-
-    $('.is__color-interactive').click(function (e) {
-      pathEmEdicao = e.target;
-      prepareSelect(pathEmEdicao);
-      var offset = $(this).offset();
-      var left = e.pageX;
-      var top = e.pageY;
-      var theHeight = $('.popover').height();
-      $('.popover').css('left', (left + 10) + 'px');
-      $('.popover').css('top', (top - (theHeight / 2) - 0) + 'px');
-      $('.popover').show();
-    });
-    $('#popover-select').change(function(){
-      var selectCor = $('#popover-select');
-      changeColor(pathEmEdicao, selectCor.val());
-      $('.popover').hide();
-    });
-    $('#escolher-cor').click(function () {     
-      $('.popover').hide();
-    });
-    $('body *:not(.controle-cor)').click(function (e) {
-      var $element = $(e.target)
-      var classe = $element.attr('class') || '';
-      if ($element.is('.is__color-interactive') || $element.is('.controle-cor') || classe.toLowerCase().indexOf('select2') >= 0) {
-        return;
-      }
-      $('.popover').hide();
-    });
-  });
-
-  function prepareSelect(e) {
-    var $element = $(e);
-    var colors = getPossibleColors($element);
-    var selectCor = $('#popover-select');
-    selectCor.empty();
-    for (var i in colors) {
-      selectCor.append('<option class="controle-cor" value="' + colors[i] + '">' + colors[i] + '</option>')
+const messages = {
+  'pt-br': {
+    productName: 'Vulto S',
+    summary: {
+      title: 'Resumo de cores',
+      info: 'Clique no corpo do cinto e simule as combinações de cores.',
+      superiorBody: 'Corpo Superior',
+      inferiorBody: 'Corpo Inferior',
+      superiorStripe: 'Faixa Superior',
+      inferiorStripe: 'Faixa Inferior',
     }
-    selectCor.val($element.data('current-color'));
-    selectCor.trigger('change');
-  }
-
-  function getPossibleColors($element) {
-    var harnessPart = $element.parent().data('harness-part');
-    if (harnessPart === 'body') {
-      return bodyColors;
+  },
+  'en': {
+    productName: 'Vulto S',
+    summary: {
+      title: 'Colors summary',
+      info: 'Click in the harness body and simulate the color combinations.',
+      superiorBody: 'Superior Body',
+      inferiorBody: 'Inferior Body',
+      superiorStripe: 'Superior Stripe',
+      inferiorStripe: 'Inferior Stripe',
     }
-    return stripeColors;
   }
+};
 
-  function changeColor(e, newColor) {
-    var elementEditing = $(e).parent().find('.is__color-interactive');
-    elementEditing.removeClass('color-' + elementEditing.data('current-color'));
-    elementEditing.data('current-color', newColor);
-    elementEditing.addClass('color-' + newColor);
+const noColorChosen = {
+  name: { 'pt-br': 'Não definida', 'en': 'Not defined' },
+  cssClass: 'color-NoColor',
+};
+
+new Vue({
+  el: '#simulador',
+  data: {
+    bodyColors,
+    stripeColors,
+    currentColors: [],
+    choosingColor: false,
+    sideMenuOpened: false,
+    inferiorBody: noColorChosen,
+    superiorBody: noColorChosen,
+    inferiorStripe: noColorChosen,
+    superiorStripe: noColorChosen,
+    currentEditingPart: null,
+    summaryOpened: false,
+    language: 'pt-br'
+  },
+  computed: {
+    messages() {
+      return messages[this.language];
+    }
+  },
+  methods: {
+    toggleSideMenu() {
+      this.sideMenuOpened = !this.sideMenuOpened
+    },
+    editHarnessColor(harnessPart, currentEditingPart) {
+      this.choosingColor = true;
+      this.currentColors = this[`${harnessPart}Colors`];
+      this.currentPartColor = this[currentEditingPart].cssClass;
+      this.currentEditingPart = currentEditingPart;
+    },
+    chooseColor(colorChosen) {
+      this[this.currentEditingPart] = colorChosen;
+      this.choosingColor = false;
+    },
   }
-
-
-
-$(document).ready(function(){
-    $(".info__card .card-header").click(function(){
-      $(".info__card ").toggleClass("is_active");
-      console.log("Opa");
-    
-    });
 });
-
-})(jQuery);
