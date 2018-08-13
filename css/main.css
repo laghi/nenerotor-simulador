@@ -10,53 +10,114 @@
 /* ==========================================================================
    Variables
    ========================================================================== */
+
 :root {
-  --color-accent:#00CCFF;
-
+  --color-accent: #00CCFF;
 }
-
-
 
 /*colors*/
 
-  /*Products color*/
-.color-Black{fill: #000000; background-color: #000000}
-.color-Amarelo{fill:  #F8D263}
-.color-AmareloLimao{fill:#B8F67A;}
-.color-Rosa{fill: #D63581;}
-.color-Vermelho{fill:#8E1F26; }
-.color-Roxo{fill: #32276C;}
-.color-Preto{fill: #222325}
-.color-CinzaChumbo{fill: #54595C}
-.color-Cinza{fill:#909398}
-.color-AzulMarinho {fill:#252837}
-.color-AzulRoyal{fill:#1B2256}
-.color-AzulTurquesa{fill: #0E4982}
-.color-Teal{fill: #03658A }
-.color-VerdeBandeira{fill: #0D4529}
-.color-VerdeLimao{fill: #5CC948 }
-.color-Laranja{fill:#FE8034 }
-.color-Prata{fill:#C6C4C5}
-.color-Branco{fill:#FFFFFF}
+/*Products color*/
 
-span.color-Amarelo{background-color:  #F8D263}
-span.color-AmareloLimao{background-color:#B8F67A;}
-span.color-Rosa{background-color: #D63581;}
-span.color-Vermelho{background-color:#8E1F26; }
-span.color-Roxo{background-color: #32276C;}
-span.color-Preto{background-color: #222325}
-span.color-CinzaChumbo{background-color: #54595C}
-span.color-Cinza{background-color:#909398}
-span.color-AzulMarinho {background-color:#252837}
-span.color-AzulRoyal{background-color:#1B2256}
-span.color-AzulTurquesa{background-color: #0E4982}
-span.color-Teal{background-color: #03658A }
-span.color-VerdeBandeira{background-color: #0D4529}
-span.color-VerdeLimao{background-color: #5CC948 }
-span.color-Laranja{background-color:#FE8034 }
-span.color-Prata{background-color:#C6C4C5}
-span.color-Branco{background-color:#FFFFFF}
+.color-NoColor {
+  fill: #eee;
+}
 
+.color-Black {
+  fill: #000000;
+  background-color: #000000;
+}
+
+.color-Amarelo {
+  fill: #F8D263;
+  background-color: #F8D263;
+}
+
+.color-AmareloLimao {
+  fill: #B8F67A;
+  background-color: #B8F67A;
+}
+
+.color-Rosa {
+  fill: #D63581;
+  background-color: #D63581;
+}
+
+.color-Vermelho {
+  fill: #8E1F26;
+  color: white;
+  background-color: #8E1F26;
+}
+
+.color-Roxo {
+  fill: #32276C;
+  color: white;
+  background-color: #32276C;
+}
+
+.color-Preto {
+  fill: #222325;
+  color: white;
+  background-color: #222325;
+}
+
+.color-CinzaChumbo {
+  fill: #54595C;
+  background-color: #54595C;
+}
+
+.color-Cinza {
+  fill: #909398;
+  background-color: #909398;
+}
+
+.color-AzulMarinho {
+  fill: #252837;
+  color: white;
+  background-color: #252837;
+}
+
+.color-AzulRoyal {
+  fill: #1B2256;
+  color: white;
+  background-color: #1B2256;
+}
+
+.color-AzulTurquesa {
+  fill: #0E4982;
+  background-color: #0E4982;
+}
+
+.color-Teal {
+  fill: #03658A;
+  background-color: #03658A;
+}
+
+.color-VerdeBandeira {
+  fill: #0D4529;
+  color: white;
+  background-color: #0D4529;
+}
+
+.color-VerdeLimao {
+  fill: #5CC948;
+  background-color: #5CC948;
+}
+
+.color-Laranja {
+  fill: #FE8034;
+  background-color: #FE8034;
+}
+
+.color-Prata {
+  fill: #C6C4C5;
+  background-color: #C6C4C5;
+}
+
+.color-Branco {
+  fill: #FFFFFF;
+  background-color: #FFFFFF;
+}
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -109,12 +170,7 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
   vertical-align: middle;
 }
 
@@ -136,21 +192,20 @@ textarea {
   resize: vertical;
 }
 
-.popover .arrow-left{
+.popover .arrow-left {
   left: -10px;
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
 }
+
 .arrow-left {
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-
-  border-right:10px solid #fff;
+  border-right: 10px solid #fff;
 }
-
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -169,7 +224,7 @@ textarea {
 
 /* .simulador {} */
 
-.simulador__main{
+.simulador__main {
   padding-top: 50px;
   position: relative;
 }
@@ -270,7 +325,6 @@ textarea {
 
 /*  .screenshot */
 
-
 .screenshot__list {
   list-style: none;
   margin: 0;
@@ -340,7 +394,7 @@ textarea {
   align-content: center;
   flex-direction: row;
   align-items: center;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)!important;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -359,7 +413,7 @@ textarea {
 
 .simulador__header__hamburguer:hover {
   text-decoration: none;
- }
+}
 
 .simulador__header__brand {
   height: 50px;
@@ -376,6 +430,7 @@ textarea {
   align-items: center;
   display: none;
 }
+
 @media (min-width: 768px) {
   .simulador__header__title {
     display: flex;
@@ -410,118 +465,108 @@ textarea {
   margin: 0 auto;
 }
 
-
-
-
 .color__list {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.color_item {
+.color__item {
   border: 1px solid #d2d3d4;
-  padding-top: 20px;
   width: 60px;
   height: 60px;
+  padding-top: 10px;
   display: inline-block;
-  margin: 0 auto;
   cursor: pointer;
   border-radius: 4px;
   font-size: 12px;
   transition: all 0.2s;
-}
-.color_item:hover {
-    background: #fff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-right: 5px;
 }
 
+.color__item:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 
+.color__choose--closed {
+  margin-top: 80px;
+}
 
-.is__color-interactive{
+.is__color-interactive {
   cursor: copy;
   /* cursor: url('../img/site/cursor/select.png'), auto;	 */
   transition: all 0.2s;
+  stroke: darkgrey;
+  stroke-width: 0.5px;
 }
-.is__color-interactive:hover{
+
+.is__color-interactive:hover {
   opacity: 0.95;
-  stroke: lightgray;
+  stroke: grey;
   stroke-width: 1px;
   stroke-linecap: round;
   fill: #b8b8b8;
 }
 
-
-.simulador__content .product svg{
-    -webkit-filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));
-    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));
+.simulador__content .product svg {
+  -webkit-filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.12));
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.12));
 }
+
 .simulador__content .product svg:hover {
-    -webkit-filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19));
+  -webkit-filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.19));
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.19));
 }
 
 .simulador__content .product>svg {
   max-width: 100%
 }
 
-
-
-
-.info{
+.info {
   position: fixed;
   width: 300px;
   right: 10px;
   bottom: 0;
 }
-.info__card{
+
+.info__card {
   z-index: 1000;
-  bottom: -250px;
+  bottom: -340px;
   transition: all 0.2s ease-in;
   border: none;
 }
 
-.info__card .card-header{
+.info__card .card-header {
   cursor: pointer;
   color: var(--color-accent);
-  background: #020202 ;
+  background: #020202;
 }
 
-.info__card.is_active{
+.info__card.is_active {
   bottom: 0
 }
 
-.info__button{  right: 20px;
+.info__button {
+  right: 20px;
   position: absolute;
   bottom: 0;
   cursor: pointer;
-   width: 50px;
+  width: 50px;
   height: 60px;
   text-align: center;
   padding: 8px;
   border-radius: 5px;
-  background: #fff;}
-  .info__button__image{
-    width: 100%;}
+  background: #fff;
+}
 
+.info__button__image {
+  width: 100%;
+}
 
-
-
-
-
-.select2-container{
+.select2-container {
   z-index: 1070;
 }
 
-
-
-
-
-
-
-
 /*Produto*/
-
-
 
 /* ==========================================================================
    Helper classes
@@ -563,8 +608,7 @@ textarea {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -594,8 +638,7 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: " ";
   /* 1 */
   display: table;
@@ -616,10 +659,7 @@ textarea {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -630,9 +670,7 @@ textarea {
    ========================================================================== */
 
 @media print {
-  *,
-  *:before,
-  *:after {
+  *, *:before, *:after {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster */
@@ -640,8 +678,7 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  a,
-  a:visited {
+  a, a:visited {
     text-decoration: underline;
   }
   a[href]:after {
@@ -654,15 +691,13 @@ textarea {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  a[href^="#"]:after, a[href^="javascript:"]:after {
     content: "";
   }
   pre {
     white-space: pre-wrap !important;
   }
-  pre,
-  blockquote {
+  pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -673,18 +708,14 @@ textarea {
   thead {
     display: table-header-group;
   }
-  tr,
-  img {
+  tr, img {
     page-break-inside: avoid;
   }
-  p,
-  h2,
-  h3 {
+  p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
-  h2,
-  h3 {
+  h2, h3 {
     page-break-after: avoid;
   }
 }
